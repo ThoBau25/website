@@ -8,7 +8,7 @@ import { RouterLink } from 'vue-router';
     <footer>
       <section id="footer-content" class="py-2">
         <BContainer>  
-          <BRow>
+          <BRow class="align-items-start gy-3">
             <BCol cols="12" md="4" class="text-center text-md-start mb-2">
               <h5 class="header mb-3">Kontakt</h5>
               <div class="d-flex flex-column flex-md-row align-items-center mb-0 gap-1">
@@ -61,6 +61,7 @@ padding-top: 10px;
 
 
 #footer a {
+  word-break: break-word;
   color: inherit;
   text-decoration: none;
 }
