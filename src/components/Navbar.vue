@@ -26,11 +26,14 @@ import {
     <BCollapse id="nav-collapse" is-nav>
       <BNavbarNav class="ms-auto gap-3">
         <BNavItem to="/" router exact active-class="active">Home</BNavItem>
-        <BNavItem to="/about" router exact active-class="active"
+        <BNavItem to="/about-me" router exact active-class="active"
           >Über Mich</BNavItem
         >
         <BNavItem to="/lebenslauf" router active-class="active"
           >Lebenslauf</BNavItem
+        >
+        <BNavItem to="/projekte" router active-class="active"
+          >Projekte</BNavItem
         >
         <BNavItem to="/kontakt" router active-class="active">Kontakt</BNavItem>
         <BNavItem to="/impressum" router active-class="active"

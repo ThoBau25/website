@@ -5,3 +5,68 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Condensed', sans-serif;
 }
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 60px 0;
+}
+.section-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px;
+  border-radius: 40px;
+  background: #e6e1f0;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6); 
+  align-items: center;
+}
+
+.section-container > div {
+  flex: 1 1 50%;
+  min-width: 0;
+}
+
+.section-container img {
+  width: 100%;
+  height: auto;
+  max-height: 540px;
+  object-fit: contain;
+  border-radius: 30px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+@media (max-width: 1200px) {
+  .section-container {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+
+  .section-container img {
+    max-width: 500px;
+    margin: 0 auto; 
+    display: block; 
+  }
+
+   h1,h2{
+    text-align: center;
+
+  }
+}
