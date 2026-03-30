@@ -4,9 +4,11 @@ import DefaultLayout from '../layout/DefaultLayout.vue';
 
 <template>
     <default-layout>
+      <section class="cv-section">
     <div class="cv-container">
       <iframe src="/Lebenslauf.pdf" width="100%" height="800px"></iframe>
     </div>
+      </section>
     </default-layout>
 
 </template>
@@ -16,6 +18,5 @@ import DefaultLayout from '../layout/DefaultLayout.vue';
 .cv-container {
  max-width: 900px;
     margin: auto;
-    padding: 20px 20px 20px 20px;
 }
 </style>

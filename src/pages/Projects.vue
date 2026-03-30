@@ -84,7 +84,9 @@ const openModal = (project) => {
 <template>
   <DefaultLayout>
     <section class="projects-section">
-      <h1>Meine Projekte</h1>
+      <div class="d-flex justify-content-center">
+      <h1 id="headline">Meine Projekte</h1>
+      </div>
       <div
         class="projects-container d-flex gap-4 flex-wrap justify-content-center"
       >
@@ -185,10 +187,18 @@ const openModal = (project) => {
 </template>
 
 <style scoped>
+.modal-section {
+  padding: 0px;
+}
 h1 {
-  text-align: center;
   margin-top: 10px;
   color: #f2eff6;
+    display: inline-block;
+  color: #716b9b;
+  background-color: #f2eff6;
+  padding: 5px 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 .button-container {
   display: flex;
@@ -215,6 +225,7 @@ h1 {
   overflow: hidden;
   padding: 20px;
   background-color: #f2eff6;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
 :deep(.card:hover) {
