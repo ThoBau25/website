@@ -36,12 +36,12 @@ import {
           >Projekte</BNavItem
         >
         <BNavItem to="/kontakt" router active-class="active">Kontakt</BNavItem>
-        <BNavItem to="/impressum" router active-class="active"
+        <!-- <BNavItem to="/impressum" router active-class="active"
           >Impressum</BNavItem
         >
         <BNavItem to="/datenschutz" router active-class="active"
           >Datenschutz</BNavItem
-        >
+        > -->
       </BNavbarNav>
     </BCollapse>
   </BNavbar>
