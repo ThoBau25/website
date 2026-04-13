@@ -4,13 +4,12 @@ import { useIntersectionObserver } from "@vueuse/core"
 export function useReveal() {
   const element = ref<HTMLElement | null>(null)
 
-  useIntersectionObserver(
+  const { stop } = useIntersectionObserver(
     element,
     ([{ isIntersecting }]) => {
       if (isIntersecting) {
         element.value?.classList.add("visible")
-      } else {
-        element.value?.classList.remove("visible")
+        stop()
       }
     },
     { threshold: 0.1 }
